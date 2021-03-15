@@ -2,6 +2,7 @@ package com.example.test;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -42,10 +43,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
         spinnerCategory();
         spinnerBrand();
-        addListenerOnButton();
         spinnerSize();
-
         spinnerCondition();
+
+        addListenerOnButton();
+
+
         imageButtonSelector = (Button) findViewById(R.id.imageButtonSelector);
 
         btnSelectPhoto = (Button) findViewById(R.id.btnSelectPhoto);
@@ -181,6 +184,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         builder.show();
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -263,6 +267,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onClick(View v) {
+
         switch(v.getId())
         {
             case R.id.btnSelectPhoto:
@@ -270,10 +275,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case R.id.imageButtonSelector:
                 imageButtonSelector.setBackground(getResources().getDrawable(R.drawable.red));
-                imageButtonSelector2.setBackground(getResources().getDrawable(R.drawable.grey));
-                imageButtonSelector3.setBackground(getResources().getDrawable(R.drawable.grey));
+               /* imageButtonSelector2.setBackground(getResources().getDrawable(R.drawable.grey));
+                imageButtonSelector3.setBackground(getResources().getDrawable(R.drawable.grey));*/
                 Toast.makeText(MainActivity.this,
-                        "Male Button is clicked!",
+                        "Male Button is  clicked!",
                         Toast.LENGTH_SHORT).show();
                 break;
             case R.id.imageButtonSelector2:
