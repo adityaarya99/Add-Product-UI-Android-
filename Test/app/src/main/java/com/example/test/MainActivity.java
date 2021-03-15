@@ -20,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -32,11 +33,12 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     ImageView viewImage;
     Button b;
+    Button imageButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        addListenerOnButton();
         b=(Button)findViewById(R.id.btnSelectPhoto);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -227,6 +229,26 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
+    }
+    public void addListenerOnButton() {
+
+        imageButton = (Button) findViewById(R.id.imageButtonSelector);
+        imageButton = (Button) findViewById(R.id.imageButtonSelector2);
+        imageButton = (Button) findViewById(R.id.imageButtonSelector3);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Toast.makeText(MainActivity.this,
+                        "Gender Button is clicked!",
+                        Toast.LENGTH_SHORT).show();
+
+            }
+
+        });
+
     }
 }
 

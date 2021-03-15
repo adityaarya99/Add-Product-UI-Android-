@@ -55,37 +55,34 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/male"
+                android:id="@+id/imageButtonSelector"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:background="@drawable/roundcorners"
-                android:backgroundTint="@color/red"
+                android:background="@drawable/button_selector"
                 android:drawableLeft="@drawable/ic_male_black_48dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="2dp" />
 
             <Button
-                android:id="@+id/female"
-                android:layout_toRightOf="@id/male"
+                android:id="@+id/imageButtonSelector2"
+                android:layout_toRightOf="@id/imageButtonSelector"
                 android:layout_width="wrap_content"
-
+                android:background="@drawable/button_selector"
                 android:layout_height="wrap_content"
-                android:background="@drawable/roundcorners"
                 android:backgroundTint="@color/grey"
                 android:drawableLeft="@drawable/ic_female_black_48dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="2dp" />
 
             <Button
-                android:id="@+id/other"
+                android:id="@+id/imageButtonSelector3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/female"
-                android:background="@drawable/roundcorners"
+                android:layout_toRightOf="@+id/imageButtonSelector2"
+                android:background="@drawable/button_selector"
                 android:backgroundTint="@color/grey"
                 android:drawableLeft="@drawable/ic_transgender_black_48dp"
-                android:layoput_gravity="right"
+
                 android:paddingLeft="20dp"
                 android:paddingRight="2dp" />
         </RelativeLayout>
