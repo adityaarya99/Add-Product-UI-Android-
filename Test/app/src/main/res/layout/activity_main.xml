@@ -23,19 +23,20 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btnSelectPhoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/grey"
             android:drawableTop="@drawable/ic_baseline_camera"
             android:text="Add Photo"
-            android:textSize="7dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="7dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="15dp"
+            android:gravity="center"
             android:text="@string/view_photo_summary"
             android:textColor="@color/red"
             android:textSize="8dp" />
@@ -52,60 +53,56 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:orientation="horizontal"
-            android:weightSum="1.5"
-           >
+            >
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".5"
-                android:paddingLeft="27dp"
-                android:paddingRight="2dp"
-                android:layout_marginRight="20dp"
+
+                android:background="@drawable/roundcorners"
                 android:backgroundTint="@color/red"
-                android:background="@drawable/roundcorners"
                 android:drawableLeft="@drawable/ic_male_black_48dp"
-                android:gravity="center_vertical" />
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp" />
 
             <Button
                 android:layout_width="wrap_content"
-               android:layout_weight=".5"
                 android:layout_height="wrap_content"
                 android:background="@drawable/roundcorners"
-                android:paddingLeft="27dp"
-                android:paddingRight="2dp"
-                android:layout_marginRight="20dp"
                 android:backgroundTint="@color/grey"
-                android:drawableLeft="@drawable/ic_female_black_48dp" />
+                android:drawableLeft="@drawable/ic_female_black_48dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp" />
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_weight=".5"
                 android:layout_height="wrap_content"
-                android:paddingLeft="27dp"
-                android:paddingRight="2dp"
-                android:background="@drawable/roundcorners"
                 android:layout_gravity="right"
+                android:background="@drawable/roundcorners"
+                android:gravity="right"
                 android:backgroundTint="@color/grey"
-                android:drawableLeft="@drawable/ic_transgender_black_48dp" />
+                android:drawableLeft="@drawable/ic_transgender_black_48dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp" />
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="Add Product Title"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp"/>
+            android:textStyle="bold" />
 
-       <EditText
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:background="@drawable/descriptioncorners"
-           android:text="Title Dummy"
-           android:textSize="12dp"
-           android:padding="10dp"
-           />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/descriptioncorners"
+            android:padding="10dp"
+            android:text="Title Dummy"
+            android:textSize="12dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -125,84 +122,83 @@
             android:text="Category (required)"
             android:textAllCaps="false"
             android:textColor="@color/black" />-->
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:background="#fafafa"
-           android:orientation="vertical"
-           android:padding="15dp"
-                android:gravity="center_vertical"
-           >
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="fill_parent"
-            android:layout_height="35dp"
-            android:layout_marginBottom="7dp"
-            android:paddingBottom="13dp"
-
-            android:background="@drawable/spinnerborder"
-
-            />
-           <Spinner
-               android:id="@+id/spinner2"
-               android:layout_width="fill_parent"
-               android:layout_height="35dp"
-               android:layout_marginBottom="7dp"
-               android:paddingBottom="13dp"
-               android:background="@drawable/spinnerborder"
-               />
-           <Spinner
-               android:id="@+id/spinner3"
-               android:layout_width="fill_parent"
-               android:layout_height="35dp"
-               android:layout_marginBottom="7dp"
-               android:paddingBottom="13dp"
-               android:background="@drawable/spinnerborder"
-               />
-           <Spinner
-               android:id="@+id/spinner4"
-               android:layout_width="fill_parent"
-               android:layout_height="35dp"
-               android:layout_marginBottom="7dp"
-               android:paddingBottom="13dp"
-               android:background="@drawable/spinnerborder"
-               />
-
-       </LinearLayout>
-       <!-- <Button
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/grey"
-            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:background="#fafafa"
             android:gravity="center_vertical"
-            android:text="Size (required)"
-            android:textAllCaps="false"
-            android:textColor="@color/black" />
+            android:orientation="vertical"
+            android:padding="15dp">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/grey"
-            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
-            android:gravity="center_vertical"
-            android:text="Brand (optional)"
-            android:textAllCaps="false"
-            android:textColor="@color/black" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/spinnerborder"
+                android:paddingBottom="13dp"
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/grey"
-            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
-            android:gravity="center_vertical"
-            android:text="Condition (required)"
-            android:textAllCaps="false"
-            android:textColor="@color/black" />
--->
+                />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/spinnerborder"
+                android:paddingBottom="13dp" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/spinnerborder"
+                android:paddingBottom="13dp" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/spinnerborder"
+                android:paddingBottom="13dp" />
+
+        </LinearLayout>
+        <!-- <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:backgroundTint="@color/grey"
+             android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+             android:gravity="center_vertical"
+             android:text="Size (required)"
+             android:textAllCaps="false"
+             android:textColor="@color/black" />
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:backgroundTint="@color/grey"
+             android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+             android:gravity="center_vertical"
+             android:text="Brand (optional)"
+             android:textAllCaps="false"
+             android:textColor="@color/black" />
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:backgroundTint="@color/grey"
+             android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+             android:gravity="center_vertical"
+             android:text="Condition (required)"
+             android:textAllCaps="false"
+             android:textColor="@color/black" />
+ -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:text="Description"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -211,10 +207,10 @@
             android:id="@+id/edit_text"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:inputType="text|textMultiLine"
-            android:gravity="top"
             android:background="@drawable/descriptioncorners"
-            />
+            android:gravity="top"
+            android:inputType="text|textMultiLine" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -233,39 +229,41 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:gravity="center"
             android:fontFamily="sans-serif-condensed-medium"
-            android:textSize="10dp"
+            android:gravity="center"
             android:text="Listing Price includes Shipping!"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal"
             android:layout_marginTop="15dp"
-            >
+            android:gravity="center"
+            android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="20dp"
-                android:background="@drawable/roundb"
-                android:backgroundTint="@color/red"
-                android:text="YES"
-                android:textColor="@color/white"
-                android:textSize="10dp"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/roundb"
+                    android:backgroundTint="@color/red"
+                    android:text="Yes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:layout_width="40dp"
                     android:layout_height="20dp"
                     android:background="@drawable/roundb"
                     android:text="No"
+                    android:textAllCaps="false"
                     android:textColor="@color/red"
                     android:textSize="10dp" />
             </LinearLayout>
@@ -275,11 +273,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="12dp"
-            android:textSize="12dp"
+            android:gravity="center"
             android:text="@string/estimate_shipping"
-            android:textColor="@color/red" />
+            android:textColor="@color/red"
+            android:textSize="12dp" />
 
         <View
             android:layout_width="match_parent"
@@ -291,10 +289,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
             android:text="Price"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="5dp"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -308,7 +306,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Price"
-                android:textSize="12dp"/>
+                android:textSize="12dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -319,17 +317,18 @@
 
                 />
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#BFBCBD" />
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#BFBCBD" />
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -340,37 +339,35 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12dp"
-                android:text="You make" />
+                android:text="You make"
+                android:textSize="12dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="12dp"
                 android:gravity="right"
                 android:text="€0:00"
+                android:textSize="12dp"
 
                 />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-           android:orientation="vertical"
-           >
+            android:orientation="vertical">
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Create Listing"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
                 android:backgroundTint="@color/red"
-                    />
-
+                android:text="Create Listing"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
 
         </LinearLayout>
     </LinearLayout>
 
-    </ScrollView>
+</ScrollView>
 

@@ -2,5 +2,6 @@
     <string name="app_name">Test</string>
     <string name="view_photo_summary"><u>View photo Suggestions</u> ></string>
     <string name="estimate_shipping"><u>Estimate Shipping</u> ></string>
+    <string name="condition"><b><i>Condition</i></b> (required)</string>
 
 </resources>
